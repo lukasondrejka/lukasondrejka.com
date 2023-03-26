@@ -58,4 +58,23 @@ h1 {
 }
 .links-list .button:hover {
   transform: scale(1.02);
+}
+
+.L {
+  text-align: center;
+  display: block;
+  padding: 24px;
+  margin-bottom: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.L::after {
+  content: "L";
+  font-weight: 300;
+  font-size: 68px;
+  text-align: center;
+  color: white;
+  border: 6px solid white;
+  border-radius: 1000px;
+  padding: 6px 30px;
 }/*# sourceMappingURL=style.css.map */
