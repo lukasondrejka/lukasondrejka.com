@@ -4,11 +4,10 @@
     padding: 0;
 }
 
-
 html,
 body {
-  width: 100svw;
-  height: 100svh;
+  min-width: 100%;
+  min-height: 100vh;
   overflow-x: hidden !important; 
   user-select: none;
 }
@@ -18,13 +17,13 @@ body {
   justify-content: center;
   align-items: center;
   background: $body-background;
-  font-family: Tahoma, sans-serif; 
-  height: 100vh;
+  font-family: Tahoma, sans-serif;
 }
 
 main {
   padding: 20px;
   margin: 20px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, .button {
@@ -32,7 +31,6 @@ h1, h2, h3, h4, h5, h6, p, .button {
   letter-spacing: 0.02em;
   color: $white;
 }
-
 
 h1 {
   font-size: 2.5em;

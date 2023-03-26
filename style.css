@@ -5,8 +5,8 @@
 
 html,
 body {
-  width: 100svw;
-  height: 100svh;
+  min-width: 100%;
+  min-height: 100vh;
   overflow-x: hidden !important;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -19,12 +19,12 @@ body {
   align-items: center;
   background: linear-gradient(135deg, rgba(73, 255, 179, 0.9529411765), rgba(19, 134, 176, 0.9529411765)), rgba(19, 134, 176, 0.9529411765);
   font-family: Tahoma, sans-serif;
-  height: 100vh;
 }
 
 main {
   padding: 20px;
   margin: 20px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, .button {
