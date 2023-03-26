@@ -19,7 +19,6 @@ body {
   align-items: center;
   background: linear-gradient(135deg, rgba(73, 255, 179, 0.9529411765), rgba(19, 134, 176, 0.9529411765)), rgba(19, 134, 176, 0.9529411765);
   font-family: Tahoma, sans-serif;
-  height: 100vh;
 }
 
 main {
