@@ -14,17 +14,22 @@ body {
 }
 
 body {
+  background: linear-gradient(135deg, rgba(73, 255, 179, 0.9529411765), rgba(19, 134, 176, 0.9529411765)), rgba(19, 134, 176, 0.9529411765);
+  font-family: Tahoma, sans-serif;
+}
+
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgba(73, 255, 179, 0.9529411765), rgba(19, 134, 176, 0.9529411765)), rgba(19, 134, 176, 0.9529411765);
-  font-family: Tahoma, sans-serif;
+  width: 100%;
+  min-height: 90svh;
+  margin: 0;
 }
 
 main {
   padding: 20px;
   margin: 20px;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, .button {
@@ -67,7 +72,6 @@ h1 {
   margin-bottom: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .L::after {
   content: "L";
   font-weight: 300;

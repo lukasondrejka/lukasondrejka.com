@@ -13,17 +13,23 @@ body {
 }
 
 body {
+
+  background: $body-background;
+  font-family: Tahoma, sans-serif;
+}
+
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $body-background;
-  font-family: Tahoma, sans-serif;
+  width: 100%;
+  min-height: 90svh;
+  margin: 0;
 }
 
 main {
   padding: 20px;
   margin: 20px;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, .button {
