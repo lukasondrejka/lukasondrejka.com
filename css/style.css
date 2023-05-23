@@ -15,7 +15,7 @@ body {
 
 body {
   background: linear-gradient(135deg, rgba(73, 255, 179, 0.9529411765), rgba(19, 134, 176, 0.9529411765)), rgba(19, 134, 176, 0.9529411765);
-  font-family: Tahoma, sans-serif;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
 .box {
@@ -34,51 +34,55 @@ main {
 
 h1, h2, h3, h4, h5, h6, p, .button {
   font-weight: 300;
-  letter-spacing: 0.02em;
+  letter-spacing: 1px;
   color: #FFFFFF;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 40px;
   text-align: center;
   margin: 28px 0 40px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 .links-list {
   list-style: none;
+  margin: 0 auto;
 }
-.links-list .button {
-  font-size: 1.25em;
+
+.button {
+  font-size: 20px;
   display: block;
   width: 100%;
   background-color: transparent;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
   padding: 12px 0px;
-  margin: 32px 0;
+  margin: 28px 0;
   border-radius: 1000px;
   text-align: center;
   text-decoration: none;
   transition: transform 0.15s;
 }
-.links-list .button:hover {
+.button:hover {
   transform: scale(1.02);
 }
-
-.L {
-  text-align: center;
-  display: block;
-  padding: 24px;
-  margin-bottom: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 24px;
+  }
 }
-.L::after {
-  content: "L";
-  font-weight: 300;
-  font-size: 68px;
-  text-align: center;
-  color: white;
-  border: 6px solid white;
-  border-radius: 1000px;
-  padding: 6px 30px;
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
