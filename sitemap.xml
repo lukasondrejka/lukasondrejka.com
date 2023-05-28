@@ -3,15 +3,15 @@
     <url>
         <loc>https://lukasondrejka.com/</loc>
         <priority>1.0</priority>
-        <lastmod>2023-05-24</lastmod>
-        <xhtml:link rel="alternate" hreflang="en-us" href="https://lukasondrejka.com" />
-        <xhtml:link rel="alternate" hreflang="sk-sk" href="https://lukasondrejka.com/sk" />
+        <lastmod>2023-05-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lukasondrejka.com" />
+        <xhtml:link rel="alternate" hreflang="sk" href="https://lukasondrejka.com/sk" />
     </url>
     <url>
         <loc>https://lukasondrejka.com/sk</loc>
         <priority>1.0</priority>
-        <lastmod>2023-05-24</lastmod>
-        <xhtml:link rel="alternate" hreflang="en-us" href="https://lukasondrejka.com" />
-        <xhtml:link rel="alternate" hreflang="sk-sk" href="https://lukasondrejka.com/sk" />
+        <lastmod>2023-05-29</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lukasondrejka.com" />
+        <xhtml:link rel="alternate" hreflang="sk" href="https://lukasondrejka.com/sk" />
     </url>
 </urlset>
