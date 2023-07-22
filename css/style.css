@@ -18,6 +18,10 @@ body {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
+.display-none {
+  display: none;
+}
+
 .box {
   display: flex;
   justify-content: center;
