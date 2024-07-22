@@ -1,0 +1,22 @@
+{
+  "name": "lukasondrejka.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasondrejka/lukasondrejka.com.git"
+  },
+  "author": "Lukáš Ondrejka",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
+    "clean": "rm -rf dist/*"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-sass": "^2.2.4",
+    "html-minifier": "^4.0.0",
+    "sass": "^1.70.0"
+  }
+}

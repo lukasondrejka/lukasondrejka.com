@@ -1,4 +1,8 @@
 
+$body-background: linear-gradient(135deg, #49ffb3f3, #1386b0f3), #1386b0f3;
+$font: Tahoma, Verdana, Segoe, sans-serif;
+$white: #FFFFFF;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ body {
 
 body {
   background: $body-background;
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-family: $font;
 }
 
 .display-none {
@@ -46,11 +50,11 @@ h1 {
   text-align: center;
   margin: 28px 0 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     font-size: 44px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (width >= 1024px) {
     font-size: 48px;
   }
 }
@@ -64,15 +68,12 @@ h1 {
   font-size: 20px;
   display: block;
   width: 100%;
-
   background-color: transparent;
   border: 2px solid $white;
   color: $white;
-
-  padding: 12px 0px;
+  padding: 12px 0;
   margin: 28px 0;
   border-radius: 1000px;
-
   text-align: center;
   text-decoration: none;
   transition: transform .15s;
@@ -81,11 +82,11 @@ h1 {
     transform: scale(1.02);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (width >= 1024px) {
     font-size: 24px;
   }
 }

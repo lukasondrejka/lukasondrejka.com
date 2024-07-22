@@ -1,0 +1,27 @@
+---
+layout: layouts/main.njk
+title: Lukáš Ondrejka
+description: Visit lukasondrejka.com to access Lukáš Ondrejka's online profiles. Connect on LinkedIn and explore the GitHub projects…
+links:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/lukasondrejka/
+  - name: GitHub
+    url: https://github.com/lukasondrejka
+---
+<div class="box">
+    <main>
+        <h1 class="title">{{ title }}</h1>
+        <div class="display-none">
+            <p>Website with social networks links.</p>
+        </div>
+        <ul class="links-list">
+            {%- for link in links -%}
+            <li>
+                <a class="button" target="_blank" href="{{ link.url }}">
+                    {{ link.name }}
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </main>
+</div>

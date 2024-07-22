@@ -1,0 +1,33 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary">
+        {% if pageUrl %}
+        <meta name="url" content="{{ pageUrl }}">
+        <link rel="canonical" href="{{ pageUrl }}">
+        <meta property="og:url" content="{{ pageUrl }}">
+        <meta name="twitter:url" content="{{ pageUrl }}">
+        {% endif %}
+        {% if description %}
+        <meta name="description" content="{{ description }}">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="twitter:description" content="{{ description }}">
+        {% endif %}
+        {% if title %}
+        <title>{{ title }}</title>
+        <meta property="og:title" content="{{ title }}">
+        <meta name="twitter:title" content="{{ title }}">
+        {% endif %}
+        <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+        <link rel="icon" href="{{ '/favicon.png' | url }}" type="image/png">
+    </head>
+    <body>
+        {{ content | safe }}
+  </body>
+</html>
