@@ -8,11 +8,11 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
         <meta property="og:type" content="website">
         <meta name="twitter:card" content="summary">
-        {% if pageUrl %}
-        <meta name="url" content="{{ pageUrl }}">
-        <link rel="canonical" href="{{ pageUrl }}">
-        <meta property="og:url" content="{{ pageUrl }}">
-        <meta name="twitter:url" content="{{ pageUrl }}">
+        {% if not eleventyExcludeFromCollections %}
+        <meta name="url" content="{{ site.url }}{{ page.url | url }}">
+        <link rel="canonical" href="{{ site.url }}{{ page.url | url }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
+        <meta name="twitter:url" content="{{ site.url }}{{ page.url | url }}">
         {% endif %}
         {% if description %}
         <meta name="description" content="{{ description }}">
