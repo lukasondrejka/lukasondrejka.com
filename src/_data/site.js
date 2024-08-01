@@ -1,1 +1,1 @@
-module.exports = { 'url': 'http://lukasondrejka.com' };
+module.exports = { 'url': 'https://lukasondrejka.com' };
