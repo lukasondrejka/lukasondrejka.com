@@ -1,12 +1,16 @@
 // Main
 
-$white: #ffffff;
+$background: linear-gradient(135deg, #49ffb3f3, #1386b0f3), #1386b0f3;
+$primary-color: #ffffff;
+
+body {
+  background: $background;
+}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-height: 88svh;
 }
   
@@ -16,7 +20,7 @@ main {
 }
   
 h1, h2, h3, h4, h5, h6, p, .button, .title {
-  color: $white;
+  color: $primary-color;
 }
   
 .title {
@@ -36,18 +40,19 @@ h1, h2, h3, h4, h5, h6, p, .button, .title {
 .links-list {
   list-style: none;
   margin: 0 auto;
+  padding: 0 4px;
 }
   
 .button {
   font-size: 22px;
   display: block;
   width: 100%;
+  color: $primary-color;
   background-color: transparent;
-  border: 2px solid $white;
-  color: $white;
+  border: 2px solid $primary-color;
+  border-radius: 1000px;
   padding: 8px 0;
   margin: 28px 0;
-  border-radius: 1000px;
   text-align: center;
   text-decoration: none;
   transition: transform .15s;
@@ -64,8 +69,4 @@ h1, h2, h3, h4, h5, h6, p, .button, .title {
   @media screen and (width >= 1024px) {
     font-size: 26px;
   }
-}
-
-.display-none {
-  display: none;
 }

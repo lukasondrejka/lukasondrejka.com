@@ -7,14 +7,14 @@ const outputDir = 'dist';
 module.exports = function(eleventyConfig) {
   // Copy static files
   eleventyConfig.addPassthroughCopy({
-    [`${inputDir}/static`]: '/',
+    [`${inputDir}/_static`]: '/',
   });
 
   // Compile scss files
   eleventyConfig.addPlugin(eleventySass, {
     compileOptions: {
       permalink: function(contents, inputPath) {
-        return (data) => data.page.filePathStem.replace(/^\/scss\//, '/css/') + '.css';
+        return (data) => data.page.filePathStem.replace(/^\/_scss\//, '/css/') + '.css';
       }
     },
     sass: {
